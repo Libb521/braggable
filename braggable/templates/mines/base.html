@@ -13,16 +13,16 @@
   {% block styles %}
     {% bootstrap_css %}
   {% endblock %}
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     {% include "navbar.html" %}
     
-    {% block content %} <h1 style="text-align: center; color: purple;"> My Repositories </h1> {%endblock%}
+    {% block content %} <h1 style="text-align: center; color: purple;"> My Braggables </h1> {%endblock%}
     <!-- <header class="header">
         <div class="top-bar container-fluid">
             <ul class=" list-inline">
-                <li><a href="https://www.linkedin.com/in/chepkirui-betty"><i class="fa fa-linkedin"
+                <li><a href="https://www.linkedin.com/in/elizabeth-otieno-57915821/"><i class="fa fa-linkedin"
                             aria-hidden="true"></i></a></li>
                 <li><a href="https://twitter.com/MehulKo18943279"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 </li>
@@ -31,9 +31,46 @@
                 <li><a href="https://github.com/chepkiruibetty"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
                 </li>
             </ul>
-            <!--//social-->
+         </div> -->
+    <!-- </header> -->
+     <div class="page-nav-space-holder hidden-xs">
+        <div id="page-nav-wrapper" class="page-nav-wrapper text-center">
+            <div class="container">
+                <ul id="page-nav" class=" list-inline">
+                    <li><a class="scrollto" href="#education-section">Education</a></li>
+                    <li><a class="scrollto" href="#skills-section">Skills</a></li>
+                    <li><a class="scrollto" href="#portfolio-section">Portfolio</a></li>
+                    <li><a class="scrollto" href="#contact-section">Contact</a></li>
+                </ul>
+                <!--//page-nav-->
+            </div>
         </div>
-    </header> -->
+        <div class="landing">
+            <div class="intro">
+                <div class="container text-center">
+                    <img class="profile-image" src="https://bit.ly/32ti1wA" alt="Libby">
+                    <h1 class="name">Elizabeth Ayiemba Otieno</h1>
+                    <h4 class="title">Full Stack Software Development Student </h2>
+
+                    <div class="bio">
+                        <p>I am a passionate individual. I love innovations and anything that challenges me intellectually<br>, hence my love for the Tech Field. We have faced so many challenges in the <br>past not knowing that we can actuallycolve them using simple applications. I am therefore <br>here to learn that and make those applications and solutions <br>a reality for not people. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="container text-center">
+                    <ul class="list-inline">
+                        <li class="email"><i class="fa fa-envelope"></i><a
+                                href="chepkiruibetty64@gmail.com">chepkiruibetty64@gmail.com</a></li>
+                        <li><i class="fa fa-phone"></i> <a href="tel: +254727325535">+254727325535</a></li>
+                        <li class="website"><i class="fa fa-globe"></i><a href="#">chepkiruibetty64.com</a></li>
+                    </ul>
+                </div>
+                <!--//container-->
+            </div>
+            <!--//contact-info-->
+        </div>
+    </div>
     
     
     
