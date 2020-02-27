@@ -5,6 +5,8 @@ from imagekit.processors import ResizeToFit
 # Create your models here.
 class Project(models.Model):
     title = models.CharField(max_length=60)
+    first_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)
     description = models.TextField(max_length=510)
     tags = models.CharField(max_length=250)
     is_visible = models.BooleanField(default=True)
