@@ -1,0 +1,8 @@
+body{
+    background-color: rgb(16, 243, 148);
+    background-image: url('https://bit.ly/2VnvVyO');
+}
+#me{
+    padding-top: calc(3rem + 10px);
+    padding-bottom: 3rem;
+}

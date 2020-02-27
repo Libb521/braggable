@@ -1,4 +1,5 @@
 {% load bootstrap3 %}
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,17 +14,20 @@
   {% block styles %}
     {% bootstrap_css %}
   {% endblock %}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">%}
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+ </head>
 <body>
     {% include "navbar.html" %}
     
-    {% block content %} <h1 style="text-align: center; color: purple;"> My Braggables </h1> {%endblock%}
+    {% block content %} 
+    <h1 style="text-align: center; color: purple;"> My Braggables </h1> 
+    {%endblock%}
      <div class="page-nav-space-holder hidden-xs">
         <div class="landing">
             <div class="intro">
                 <div class="container text-center">
-                    <img class="profile-image" src="https://bit.ly/32ti1wA" alt="Libby">
+                    <img id="me" class="profile-image" src="/" alt="Libby">
                     <h1 class="name">Elizabeth Ayiemba Otieno</h1>
                     <h4 class="title">Full Stack Software Development Student </h2>
 
